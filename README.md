@@ -1,19 +1,17 @@
-# 郑新楠简历（LaTeX / Overleaf）
+# 刘羽个人简历（LaTeX / Overleaf）
 
-## 在 Overleaf 中使用
+## Overleaf 编译
 
-1. 将本目录压缩为 ZIP，或直接上传项目 ZIP。
-2. 在 Overleaf 选择 **New Project → Upload Project**。
-3. 编译器选择 **XeLaTeX**。
-4. 主文件为 `main.tex`。
+1. 上传项目 ZIP，或从 GitHub 导入项目。
+2. 将主文件设置为 `main.tex`。
+3. 在项目 Settings 中将 Compiler 设置为 **XeLaTeX**。
+4. 选择 **Recompile from scratch**。
 
-项目使用 `ctexart` 与 Overleaf 自带的 Fandol 中文字体，不需要额外安装字体。
+## 文件说明
 
-## 文件
+- `main.tex`：简历正文与版式。
+- `portrait-liuyu.jpg`：从用户原简历中无损裁切的证件照。
 
-- `main.tex`：简历正文与全部版式定义。
-- `portrait.jpg`：原简历中的证件照。
+## 待确认内容
 
-## 提醒
-
-原 Word 文件中的“Google 学术主页”和每篇论文后的“链接”没有保存实际 URL，因此这里保留了显示文字；Google 学术主页暂时指向 Google Scholar 首页。拿到具体 URL 后，可直接替换为 `\href{URL}{显示文字}`。
+原 LaTeX 的“个人优势”中政治背景、项目经验，以及完整“项目经历”在刘羽的 PDF 中没有对应信息，已按要求暂时保留，并在源码中用 `TODO` 注释标记。下一轮取得真实内容后应优先替换。
